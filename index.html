@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/utilities.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>Rock, Paper, Scissors</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1 class="game-title" id="game-title">ROCK, PAPER, SCISSORS</h1>
+      </header>
+      <section class="main-game">
+        <h2 id="message" class="message">Welcome</h2>
+        <!-- <h3 class="winner" id="winner"></h3> -->
+
+
+        <div class="container row">
+          <div class="player-box player1-box">
+            <label for="player-1-name-input">Player 1</label>
+            <div class="player-name-form">
+              <input
+              type="text"
+              placeholder="enter your name"
+              name="player-1-name"
+              id="player-1-name"
+            />
+            <button id="name-submit-btn-1" class="name-submit-btn">
+              Save
+            </button>
+            </div>
+            <label for="" id="error1" class="error"></label>
+            
+            <div class="player-hand player-1-hand">
+              <img id="player1-img" src="images/paper sized.jpg" alt="" />
+            </div>
+          </div>
+
+
+          <div class="btn-container">
+            <button id="simulate-btn" class="simulate-btn">Simulate</button>
+            <p id="winner" class="winner"></p>
+          </div>
+
+
+          <div class="player-box player2-box">
+            <label for="player-2-name">Player 2</label>
+            <div class="player-name-form">
+              <input 
+              type="text"
+              placeholder="enter your name"
+              name="player-2-name"
+              id="player-2-name"
+            />
+            <button id="name-submit-btn-2" class="name-submit-btn">
+              Save
+            </button>
+            </div>
+            <label for="" id="error2" class="error"></label>
+            
+            <div class="player-hand player-2-hand">
+              <img id="player2-img" src="images/rock2 sized.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+    <script src="scripts/rock-paper-scissors.js"></script>
+    <script src="scripts/disable-btn.js" id="disable-button">
+    </script>
+  </body>
+</html>

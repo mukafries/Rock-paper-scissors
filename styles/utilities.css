@@ -1,0 +1,30 @@
+.row{
+  display: flex;
+  gap: 20px;
+  align-content: center;
+}
+
+.text-align_center{
+  text-align: center;
+}
+.text-align_left{
+  text-align: left;
+}
+.text-align_right{
+  text-align: right;
+}
+
+.error{
+  color: red;
+  font-size: var(--font-size-sm);
+}
+
+@media screen and (max-width: 550px) {
+  .row{
+    flex-direction: column;
+  }
+
+  img{
+    max-width: 30%;
+  }
+}

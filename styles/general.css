@@ -1,0 +1,115 @@
+html{
+  box-sizing: border-box;
+}
+
+:root{
+  --font-size-sm: 0.75rem;
+  --font-size-base: 1rem;
+  --font-size-md: 1.25rem;
+  --font-size-lg: 1.5rem;
+  --font-size-xl: 1.75rem;
+  --font-size-xxl: 2rem;
+  --font-size-xxxl: 2.25rem;
+}
+
+*, 
+*::after, 
+*::before{
+  box-sizing: inherit;
+}
+
+body{
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+}
+h1,h2,h3,h4,h5,h6, p{
+  padding: 0;
+  margin: 0;
+}
+
+header{
+  margin: 20px 0 40px 0;
+}
+
+h1{
+  font-size: var(--font-size-xxxl);
+}
+
+h2{
+  font-size: var(--font-size-xxl);
+}
+
+h3{
+  font-size: var(--font-size-xl);
+}
+
+h4{
+  font-size: var(--font-size-lg);
+}
+
+h5{
+  font-size: var(--font-size-md);
+}
+
+h6{
+  font-size: var(--font-size-base);
+}
+
+p{
+  font-size: var(--font-size-sm);
+}
+
+
+img{
+  max-width: 50%;
+  /* height: 90%; */
+  border-radius: 50%;
+  /* overflow: hidden; */
+}
+
+input{
+  background-color: rgb(244, 244, 244);
+  color: black;
+  border: 1px solid red;
+}
+
+button{
+  background-color: white;
+  color: black;
+  border: none;
+}
+
+button:hover{
+  opacity: .6;
+}
+button:active{
+  background-color: gray;
+}
+
+main{
+  background-color: rgba(255, 255, 255, 0.107);
+  /* linear gradient */
+  background-image: linear-gradient(225deg, rgb(0, 0, 0) 20%, rgb(1, 53, 117));
+
+  /* radial */
+  /* background-image: radial-gradient(rgb(0, 0, 0) 90%, rgb(1, 53, 117)); */
+
+  /* side closest to the center of the gradient */
+  /* background-image: radial-gradient(farthest-side at 100px 100px, rgb(0, 0, 0) 30%, rgb(1, 53, 117) 60%); */
+
+  /* repeating radial gradient */
+  /* background-image: repeating-radial-gradient(farthest-corner at 100px 100px, rgb(0, 0, 0) 30%, rgb(1, 53, 117) 60%); */
+
+  /* min-width: 300px; */
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px 10px;
+}
+
+.main-game{
+  background-color: rgba(255, 255, 255, 0.107);
+  padding: 5px;
+}
